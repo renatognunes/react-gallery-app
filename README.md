@@ -1,3 +1,45 @@
+Treehouse Techdegree: FSJS project 6 - Static Node Express Site
+
+This project uses technologies such as React, JSX, Axios, Node.js, and NPM. I've built a React Gallery App that fetches data from Unsplash API and displays images based on the user search. The App has the main search bar for dynamically interactive and also pre-defined buttons as a navbar which displays images based on the appropriate button name. The App uses React Router Dom as its main component to render results and keep the URL path in sync with the search results. Using the search bar or a first parameter in the URL will display the same results.
+
+Languages:
+- Javascript ES6
+- Node.js
+- React
+- JSX
+- JSON
+- CSS3
+- HTML5
+
+Dependencies:
+- React
+- Axios
+- React Router Dom
+
+Tools:
+- Visual Studio Code
+- DevTools Google Chrome
+- Git
+- NodeJS
+- Command line
+
+Basics methods and technics:
+- React Stateless and Stateful Components
+- Fetching data from API
+- Managing Dependencies with NPM
+- React Router v4
+- Managing React States
+- Handling Errors in Node
+- Higher-Order Functions
+- Callback Functions
+- Loopings and Conditionals
+- JSDoc 3
+
+Examiner:
+
+For styling, I've chosen a minimalist approach. 
+I've changed colors, buttons, fonts, transitions, and borders.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
