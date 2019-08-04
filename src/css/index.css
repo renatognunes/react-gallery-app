@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #3f4850;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 52px 0 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 40px 0 40px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+span {
+  color: #4b4b4b;
+  font-weight: 500;
+}
+
+.photo-container li {
+  box-shadow: 0px 5px 5px -2px #242424b7;
+}
+
+.search-form {
+  max-width: 490px;
+  display: flex;
+  margin: 0 auto 32px;
+}
+
+.search-form button {
+  outline: none;
+  border: none;
+  padding: 4px 9px 5px 6px;
+  cursor: pointer;
+  background: #4b4b4b;
+}
+
+input {
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.2em;
+  padding: 1px 15px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff; 
+  border-bottom: 2px solid #4b4b4b;
+  border-right: none;
+  outline: none;
+}
+
+.main-nav li {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.main-nav a {
+  display: block;
+  background: #ffffff;
+  padding: 12px;
+  color: #0099CC;
+  border: 2px solid #0099CC;
+}
+
+.main-nav .active,
+.main-nav a:hover {
+  color: #ffffff;
+  background-color: #0099CC;
+}
+
+.search-form button:hover {
+  background-color: #242424;
+}
+
+.photo-container ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.photo-container ul li {
+  width: 220px;
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.photo-container ul img {
+  width: 100%;
+  transform: scale(1.25);
+  transition: transform 1.25s;
+}
+
+.photo-container li:hover img {
+  transform: scale(1.65);
+}
+
+.photo-container {
+  width: 100%;
+}
+
+.not-results {
+  width: 100%;
+  text-align: center;
+}
+
+.not-results h3 {
+  font-size: 1.7em;
+  color: #8d1717;
+  margin: 40px 0 20px 0px;
+}
+
+.not-found h1 {
+  margin: 80px 0 10px;
+}
+
+@media only screen and (max-width: 767px)  {
+  body {
+    padding-top: 2em;
+  }
+
+  .photo-container li {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px)  {
+  body {
+    padding-top: 4em;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-nav li {
+    margin: 10px;
+    width: 150px;
+  }
+}

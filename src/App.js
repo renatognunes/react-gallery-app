@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import {
+  Route,
+  Switch,
+  withRouter
+} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Import Components 
+import Search from './components/Search';
+import Nav from './components/Nav';
+import PhotoContainer from './components/PhotoContainer';
+import PageNotFound from './components/PageNotFound';
+
+/**
+ * App component handles all routes and rendered elements to the DOM.
+ * @namespace App
+ * @extends React Component
+ */
+class App extends Component { 
+
+  /**
+   * Renders all components
+   * @memberof App component
+   * @return {string} - JSX element
+   */
+  render() {
+    return (
+      <div className="container">
+          <Search {...this.props}/>
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={PhotoContainer} />
+            <Route exact path="/:query" component={PhotoContainer} />
+            <Route exact path="/search/:query" component={PhotoContainer} />
+            <Route component={PageNotFound} />
+          </Switch>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default withRouter(App);
