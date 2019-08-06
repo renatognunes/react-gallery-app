@@ -10,9 +10,9 @@ const Nav = () => {
   return (
     <nav className="main-nav">
       <ul>
-        <li><NavLink to="/travel">Travel</NavLink></li>
-        <li><NavLink to="/food">Food</NavLink></li>
-        <li><NavLink to="/music">Music</NavLink></li>
+        <li><NavLink to="/search/travel">Travel</NavLink></li>
+        <li><NavLink to="/search/food">Food</NavLink></li>
+        <li><NavLink to="/search/music">Music</NavLink></li>
       </ul>
     </nav>
   )

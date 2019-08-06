@@ -30,8 +30,7 @@ class App extends Component {
           <Nav />
           <Switch>
             <Route exact path="/" component={PhotoContainer} />
-            <Route exact path="/:query" component={PhotoContainer} />
-            <Route exact path="/search/:query" component={PhotoContainer} />
+            <Route path="/search/:query" component={PhotoContainer} />
             <Route component={PageNotFound} />
           </Switch>
       </div>
