@@ -1,4 +1,4 @@
-Treehouse Techdegree: FSJS project 7 - React Gallery App
+React Gallery App
 
 This project uses technologies such as React, JSX, Axios, Node.js, and NPM. I've built a React Gallery App that fetches data from Unsplash API and displays images based on the user search. The App has the main search bar for dynamically interactive and also pre-defined buttons as a navbar which displays images based on the appropriate button name. The App uses React Router Dom as its main component to render results and keep the URL path in sync with the search results. Using the search bar or a first parameter in the URL will display the same results.
 
@@ -36,11 +36,6 @@ Basics methods and technics:
 - Callback Functions
 - Loopings and Conditionals
 - JSDoc 3
-
-Examiner:
-
-For styling, I've chosen a minimalist approach. 
-I've changed colors, buttons, fonts, transitions, and borders.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
